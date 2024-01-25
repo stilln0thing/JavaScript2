@@ -24,6 +24,50 @@ let state;
 console.log(typeof undefined); //undefined
 console.log(typeof null); //object
 
+//***********Datatypes */
+// PRIMITIVE
 
+// 7 Types :- String, Number , boolean, Null, Undefined, Symbol, BigInt
+
+
+const score = false;
+const scoreValue = 100.3;
+const isLoggedin = false;
+const outsideTemp = null;
+let userEmail
+
+const id= Symbol('123')
+const anotherId = Symbol('123')
+
+console.log(id === anotherId)
+
+const bigNumber = 4567212374893200574n
+
+// REFERENCE(Non Primitive)
+
+//Arrays, Objects, Functions
+
+const heros = ["shaktiman", "naagraj", "me"]
+let myObj = {
+    name : "atharv",
+    age: 19,
+}
+
+const MyFunction = function(){
+    console.log("Hello!")
+}
+
+console.log(typeof bigNumber)
+
+
+//  *****************************************************************************************
+
+// Stack(Primitive),  Heap(Non Primitive)
+
+let myYoutubeName = "abcd";
+let anotherName = myYoutubeName;
+anotherName = "bcdse";
+console.log(myYoutubeName)
+console.log(anotherName);
 
 
